@@ -34,7 +34,7 @@ public class ClienteController {
     }
 
     @PutMapping("/update")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.CREATED)
     public Cliente update(@RequestBody Cliente cliente) {return clienteService.update(cliente);}
 
     @DeleteMapping("/{id}")
