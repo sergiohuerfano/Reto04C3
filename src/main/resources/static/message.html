@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="js/funcionesMensaje.js"></script>
+    <style>table, th, td { border: 1px solid gray;border-collapse: collapse;}</style>
+    <title>Mensajes</title>
+</head>
+<body>
+<header>
+    <h1>Mensajes</h1>
+    <ul>
+        <li><a href="index.html">Volver al INICIO</a></li>
+        <br>
+        <li><a href="category.html">Categorias</a></li>
+        <li><a href="cloud.html">Cinemas</a></li>
+        <li><a href="client.html">Clientes</a></li>
+        <li><a href="reservation.html">Reservaciones</a></li>
+    </ul>
+</header>
+
+<section>
+    <h2>Mensajes</h2>
+    <div>
+        <div>
+            <h3>Crear Mensaje</h3>
+            <input type="text" id="messageText" placeholder="Mensaje">
+            <select name="id" id="Cinema"></select>
+            <select name="idClient" id="Cliente"></select>
+        </div>
+        <button id = "guardarMensaje">Guardar</button>
+        <button id = "actualizarMensaje" >Actualizar</button>
+    </div>
+    <div>
+        <h3>Lista de Mensajes</h3>
+        <button id = "consultarMensajes"> Consultar</button>
+    </div>
+    <div id="listaMensajes"></div>
+
+</section>
+
+</body>
+</html>

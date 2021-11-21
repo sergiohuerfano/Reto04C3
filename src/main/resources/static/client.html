@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="js/funcionesCliente.js"></script>
+    <style>table, th, td { border: 1px solid gray;border-collapse: collapse;}</style>
+    <title>Clientes</title>
+</head>
+
+<body>
+<header>
+    <h1>Clientes</h1>
+    <ul>
+        <li><a href="index.html">Volver al INICIO</a></li>
+        <br>
+        <li><a href="category.html">Categorias</a></li>
+        <li><a href="cinema.html">Cines</a></li>
+        <li><a href="message.html">Mensajes</a></li>
+        <li><a href="reservation.html">Reservaciones</a></li>
+    </ul>
+</header>
+<section>
+    <h2>Clientes</h2>
+    <div>
+        <div>
+            <h3>Crear Cliente</h3>
+            <input type="text" id="name" placeholder="Nombre">
+            <input type="text" id="email" placeholder="Email">
+            <input type="number" id="age" placeholder="Edad">
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <button id = "guardarCliente">Guardar</button>
+        <button id = "editarCliente">Actualizar</button>
+    </div>
+    <div>
+        <h3>Lista de Clientes</h3>
+        <button id = "consultarClientes"> Consultar Clientes</button>
+    </div>
+    <div id="listaClientes"></div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="js/funcionesReserva.js"></script>
+    <style>table, th, td { border: 1px solid gray;border-collapse: collapse;}</style>
+    <title>Reservaciones</title>
+</head>
+<body>
+<header>
+    <h1>Reservaciones</h1>
+    <ul>
+        <li><a href="index.html">Volver al INICIO</a></li>
+        <br>
+        <li><a href="category.html">Categorias</a></li>
+        <li><a href="cinema.html">Cinemas</a></li>
+        <li><a href="client.html">Clientes</a></li>
+        <li><a href="message.html">Mensajes</a></li>
+    </ul>
+</header>
+
+<section>
+    <h2>Reservaciones</h2>
+    <div>
+        <div>
+            <h3>Crear Reserva</h3>
+            <select name="id" id="idCinema"></select>
+            <select name="idClient" id="idClient"></select>
+            <label for="startDate">Fecha de inicio</label>
+            <input type="date" id="startDate">
+            <label for="finishDate">Fecha de devolución</label>
+            <input type="date" id="finishDate">
+            <select name="status" id="status">
+                <option value="Programado">Creado</option>
+                <option value="Cancelado">Cancelado</option>
+                <option value="Realizado">Finalizado</option>
+            </select>
+        </div>
+        <button id = "guardarReservacion">Guardar</button>
+        <button id = "actualizarReservation" >Actualizar</button>
+    </div>
+    <div>
+        <h3>Lista de Reservas</h3>
+        <button id = "consultarReservaciones"> Consultar</button>
+        <br>
+        <table>
+            <thead>
+            <tr>
+                <td>Id de reservas</td>
+                <td>Cinema</td>
+                <td>Id de cliente</td>
+                <td>Nombre de cliente</td>
+                <td>Correo de cliente</td>
+                <td>Calificación</td>
+                <td>Opciones</td>
+            </tr>
+            </thead>
+            <tbody id="listaReservaciones"></tbody>
+        </table>
+    </div>
+</section>
+</body>
+</html>
