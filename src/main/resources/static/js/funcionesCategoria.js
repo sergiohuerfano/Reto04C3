@@ -18,7 +18,7 @@ function cargarCategorias(items){
         miTabla+="<th>";
         miTabla+="<tr>";
         miTabla+="<td>NOMBRE</td>";
-        miTabla+="<td>EMAIL</td>";
+        miTabla+="<td>DESCRIPCION</td>";
         miTabla+="</tr>";
         miTabla+="</th>";
         miTabla+="<tr>";

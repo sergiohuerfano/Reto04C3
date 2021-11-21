@@ -27,7 +27,7 @@ function mostrarTabla(lista){
 
     for(let i=0;i<lista.length;i++){
         miTabla+="<th>";
-        miTabla+="<tr>
+        miTabla+="<tr>;
         miTabla+="<td>PROPIETARIO</td>";
         miTabla+="<td>CAPACIDAD</td>";
         miTabla+="<td>CATEGORIA</td>";

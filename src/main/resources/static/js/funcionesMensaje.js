@@ -13,7 +13,7 @@ function consultarMsj(){
 
     $.ajax({
         dataType:'json',
-        url:BASE_URL + "api/Message/all",,
+        url:BASE_URL + "api/Message/all",
         type:'GET',
         success:function(response){
             console.log(response),

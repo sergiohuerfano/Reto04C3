@@ -43,7 +43,7 @@ public class Cinema implements Serializable {
     Relacion
     */
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "cinema")
-    @JsonIgnoreProperties({"cinemas"})
+    @JsonIgnoreProperties({"cinema","client"})
     private List<Mensaje> messages;
 
     /*
